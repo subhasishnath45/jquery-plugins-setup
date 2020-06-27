@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #ff0000;
+}
+
+
+
+
+.carousel-wrap {
+  margin: 90px auto;
+  /* padding: 0 5%; */
+  width: 90%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+
+
+
+
+
+
+
+
+.your-class {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .your-class img {
+    width: 100%;
+  }
+  .slick-prev.slick-arrow {
+    position: absolute;
+    left: 33px;
+    z-index: 99999;
+  }
+  .slick-prev.slick-arrow:before,
+  .slick-next.slick-arrow:before {
+    color: #000;
+    font-size: 3rem;
+  }
+  .slick-next.slick-arrow{
+    position: absolute;
+    right: 60px !important;
+    z-index: 99999;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+  }
+  .slick-dots li button::before {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 1;
+  }
+  .slick-dots li.slick-active button::before {
+    color: #ff0000;
+  }
+  .gallery{
+      padding:0;
+      list-style: none;
+      width: 100%;
+      display: flex;
+  }
+  .gallery li{
+      /* width: 200px; */
+      /* display:inline; */
+      width: 20%;
+        margin:10px;
+  }
+  .gallery li img{
+      max-width:100%;
+      height:200px;
+      object-fit: cover;
+  }
